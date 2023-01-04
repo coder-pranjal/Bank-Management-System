@@ -1,0 +1,10 @@
+#Creating Admin Table
+CREATE TABLE admin(PersonID int, LastName varchar(255),
+    FirstName varchar(255), Password varchar(15))
+
+#Creating Customer Table
+CREATE TABLE customer(account_Num int NOT NULL, LastName varchar(255),
+    FirstName varchar(255), Username varchar(255), Password varchar(15),Mobile_Number varchar(10), Balance int DEFAULT 500)
+
+#Inserting into admin table
+INSERT INTO admin (PersonID, LastName, FirstName, Password) VALUES (1,'Agarwal','Pranjal', 'root')
