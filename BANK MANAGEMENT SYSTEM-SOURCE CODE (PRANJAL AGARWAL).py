@@ -7,13 +7,13 @@ mycursor.execute('create database if not exists kv_bank')
 mycursor.execute('use kv_bank')
 
 if mydb.is_connected():
-    print("Succesfully connected to KV Bank Database\n\n")
+    print("Succesfully connected to SBI Bank Database\n\n")
 
 
 mycursor.execute("create table if not exists customer(Account_Num int NOT NULL, LastName varchar(255),FirstName varchar(255),Username varchar(255),Password varchar(15),Mobile_Number varchar(10),Balance int(11))")
 mydb.commit()
 
-print("\t\t**** WELCOME TO KV BANK ****\n\n")
+print("\t\t**** WELCOME TO SBI BANK ****\n\n")
 
 
 def menu():
